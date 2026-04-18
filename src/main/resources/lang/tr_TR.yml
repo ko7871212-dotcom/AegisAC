@@ -1,0 +1,43 @@
+prefix: "&8[&bAegisAC&8] "
+
+alert-low: "&7[DÜŞÜK] &f{player} &7işaretlendi &e{check} &7(İhlal: {vl})"
+alert-medium: "&e[ORTA] &f{player} &6işaretlendi &e{check} &7(İhlal: {vl})"
+alert-high: "&c[YÜKSEK] &f{player} &cİHLAL &e{check} &7(İhlal: {vl})"
+alert-very-high: "&4[ÇOK YÜKSEK] &f{player} &4KRİTİK &e{check} &7(İhlal: {vl})"
+
+player-kicked: "&cŞüpheli davranış nedeniyle atıldınız."
+player-banned: "&cHile yaptığınız için banlandınız."
+player-warned: "&eUyarı: Şüpheli aktivite tespit edildi."
+
+ai-analyzing: "&b{player} &banaliz ediliyor... Lütfen bekleyin."
+ai-result: "&b[AI] &f{player}&7: &e{risk} &7— {suggestion}"
+ai-cooldown: "&cAI'yı tekrar kullanmak için &e{seconds}s &cbeklemeniz gerekiyor."
+ai-disabled: "&cAI sistemi aktif değil."
+ai-error: "&cAI analizi başarısız. API yapılandırmasını kontrol edin."
+aichat-response: "&b[AI] &f{response}"
+
+no-permission: "&cBu komut için yetkiniz yok."
+player-not-found: "&cOyuncu bulunamadı."
+usage-aegis: "&eKullanım: /aegis <panel|reload|info>"
+usage-ai: "&eKullanım: /ai <oyuncu>"
+usage-aichat: "&eKullanım: /aichat <mesaj> veya /aichat analiz <oyuncu>"
+
+gui-main-title: "&8» &bAegisAC &8«"
+gui-players-title: "&8» &bOyuncu Listesi &8«"
+gui-suspicious-title: "&8» &cŞüpheli Oyuncular &8«"
+gui-player-panel-title: "&8» &b{player} &8«"
+gui-back: "&7← Geri"
+gui-ban: "&cOyuncuyu Banla"
+gui-kick: "&eOyuncuyu At"
+gui-fly-toggle: "&aUçuşu Değiştir"
+gui-ai-analyze: "&bAI Analizi"
+gui-violations: "&eİhlaller: &f{vl}"
+gui-cps: "&eCPS: &f{cps}"
+gui-risk: "&eRisk: &f{risk}"
+gui-trust: "&eGüven: &f{trust}"
+gui-ping: "&ePing: &f{ping}ms"
+
+trust-increased: "&a{player} güven puanı arttı: {score}"
+trust-decreased: "&e{player} güven puanı düştü: {score}"
+
+reload-success: "&aAegisAC başarıyla yeniden yüklendi."

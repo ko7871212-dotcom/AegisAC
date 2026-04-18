@@ -1,0 +1,40 @@
+prefix: "&8[&bAegisAC&8] "
+
+alert-low: "&7[LOW] &f{player} &7flagged &e{check} &7(VL: {vl})"
+alert-medium: "&e[MEDIUM] &f{player} &6flagged &e{check} &7(VL: {vl})"
+alert-high: "&c[HIGH] &f{player} &cFLAGGED &e{check} &7(VL: {vl})"
+alert-very-high: "&4[VERY HIGH] &f{player} &4CRITICAL &e{check} &7(VL: {vl})"
+
+player-kicked: "&cYou were kicked for suspicious activity."
+player-banned: "&cYou have been banned for cheating."
+player-warned: "&eWarning: Suspicious activity detected."
+
+ai-analyzing: "&bAnalyzing &f{player}&b... Please wait."
+ai-result: "&b[AI] &f{player}&7: &e{risk} &7— {suggestion}"
+ai-cooldown: "&cPlease wait &e{seconds}s &cbefore using AI again."
+ai-disabled: "&cAI system is not enabled."
+ai-error: "&cAI analysis failed. Check API configuration."
+aichat-response: "&b[AI] &f{response}"
+
+no-permission: "&cYou don't have permission."
+player-not-found: "&cPlayer not found."
+usage-aegis: "&eUsage: /aegis <panel|reload|info>"
+usage-ai: "&eUsage: /ai <player>"
+usage-aichat: "&eUsage: /aichat <message> or /aichat analiz <player>"
+
+gui-main-title: "&8» &bAegisAC &8«"
+gui-players-title: "&8» &bPlayer List &8«"
+gui-suspicious-title: "&8» &cSuspicious Players &8«"
+gui-player-panel-title: "&8» &b{player} &8«"
+gui-back: "&7← Back"
+gui-ban: "&cBan Player"
+gui-kick: "&eKick Player"
+gui-fly-toggle: "&aToggle Fly"
+gui-ai-analyze: "&bAI Analysis"
+gui-violations: "&eViolations: &f{vl}"
+gui-cps: "&eCPS: &f{cps}"
+gui-risk: "&eRisk: &f{risk}"
+gui-trust: "&eTrust: &f{trust}"
+gui-ping: "&ePing: &f{ping}ms"
+
+trust-increased: "&aT

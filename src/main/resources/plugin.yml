@@ -1,0 +1,35 @@
+name: AegisAC
+version: 1.0.0
+main: dev.aegis.AegisAC
+api-version: '1.21'
+description: AI-Powered Security & AntiCheat Platform
+authors: [AegisDev]
+softdepend: [ProtocolLib]
+
+permissions:
+  aegis.admin:
+    description: Full admin access
+    default: op
+  aegis.notify:
+    description: Receive anticheat alerts
+    default: op
+  aegis.ai:
+    description: Access AI analysis
+    default: op
+  aegis.bypass:
+    description: Bypass anticheat checks
+    default: false
+
+commands:
+  aegis:
+    description: Main AegisAC command
+    usage: /aegis <subcommand>
+    permission: aegis.admin
+  ai:
+    description: AI player analysis
+    usage: /ai <player>
+    permission: aegis.ai
+  aichat:
+    description: AI chat
+    usage: /aichat <message>
+    permission: aegis.ai

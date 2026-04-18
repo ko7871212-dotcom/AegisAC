@@ -1,0 +1,117 @@
+version: "1.0.0"
+language: "en_US"
+performance-mode: "balanced"
+
+database:
+  type: "sqlite"
+  file: "aegis_data.db"
+
+ai:
+  enabled: true
+  api-url: "https://api.openai.com/v1/chat/completions"
+  api-key: "YOUR_API_KEY_HERE"
+  model: "gpt-4o-mini"
+  cooldown-seconds: 10
+  max-tokens: 300
+
+alerts:
+  low:
+    log: true
+    notify-admins: false
+  medium:
+    log: true
+    notify-admins: true
+    actionbar: true
+  high:
+    log: true
+    notify-admins: true
+    chat: true
+    kick: false
+  very-high:
+    log: true
+    notify-admins: true
+    title: true
+    sound: true
+    kick: true
+    repeat-ban: true
+
+punishments:
+  violations-for-kick: 50
+  violations-for-ban: 100
+  ban-duration-minutes: 1440
+
+trust:
+  initial-score: 50
+  max-score: 100
+  min-score: 0
+  increase-per-clean-minute: 1
+  decrease-per-flag: 5
+
+replay:
+  enabled: true
+  record-seconds: 20
+  max-positions: 400
+
+honeypot:
+  enabled: true
+  spawn-radius: 10
+
+lag-compensation:
+  enabled: true
+  max-ping-tolerance-ms: 300
+
+checks:
+  movement:
+    fly:
+      enabled: true
+      max-airtime-ticks: 10
+      buffer: 5
+    speed:
+      enabled: true
+      max-speed-multiplier: 1.35
+      buffer: 3
+    nofall:
+      enabled: true
+      buffer: 3
+    jesus:
+      enabled: true
+      buffer: 3
+    step:
+      enabled: true
+      max-step-height: 1.0
+      buffer: 3
+    acceleration:
+      enabled: true
+      buffer: 3
+  combat:
+    killaura:
+      enabled: true
+      buffer: 5
+    reach:
+      enabled: true
+      max-reach: 3.2
+      buffer: 3
+    autoclicker:
+      enabled: true
+      max-cps: 20
+      buffer: 5
+    aimassist:
+      enabled: true
+      buffer: 5
+  interaction:
+    fastbreak:
+      enabled: true
+      buffer: 3
+    fastplace:
+      enabled: true
+      buffer: 3
+    scaffold:
+      enabled: true
+      buffer: 5
+  packet:
+    timer:
+      enabled: true
+      buffer: 3
+    badpackets:
+      enabled: true
+      buffer: 3
